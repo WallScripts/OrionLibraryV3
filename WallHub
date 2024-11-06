@@ -20,7 +20,7 @@ local OrionLib = {
 			TextDark = Color3.fromRGB(150, 150, 150)
 		}
 	},
-	SelectedTheme = "Dark",
+	SelectedTheme = "Default",
 	Folder = nil,
 	SaveCfg = false
 }
@@ -581,7 +581,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Position = UDim2.new(0, 0, 1, -1)
 	}), "Stroke")
 
-	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(47, 79, 79), 0, 10), {
+	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
 		Parent = Orion,
 		Position = UDim2.new(0.5, -307, 0.5, -172),
 		Size = UDim2.new(0, 615, 0, 344),
@@ -1710,7 +1710,7 @@ function OrionLib:MakeWindow(WindowConfig)
 end   
 
 local Configs_HUB = {
-  Cor_Hub = Color3.fromRGB(47, 79, 79),
+  Cor_Hub = Color3.fromRGB(15, 15, 15),
   Cor_Options = Color3.fromRGB(15, 15, 15),
   Cor_Stroke = Color3.fromRGB(60, 60, 60),
   Cor_Text = Color3.fromRGB(240, 240, 240),
@@ -1796,7 +1796,7 @@ function OrionLib:MakeNotifi(Configs)
   
   local Frame1 = Create("Frame", Menu_Notifi, {
     Size = UDim2.new(2, 0, 0, 0),
-    BackgroundTransparency = 0.5,
+    BackgroundTransparency = 1,
     AutomaticSize = "Y",
     Name = "Title"
   })
@@ -1853,7 +1853,7 @@ function OrionLib:MakeNotifi(Configs)
   })Corner(FrameSize)Create("Frame", Frame2, {
     Size = UDim2.new(0, 0, 0, 5),
     Position = UDim2.new(0, 0, 1, 5),
-    BackgroundTransparency = 0.5
+    BackgroundTransparency = 1
   })
   
   task.spawn(function()
