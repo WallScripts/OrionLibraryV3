@@ -642,8 +642,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MobileReopenButton.Visible = true
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
-			Content = "Aperte o botão direito pra abrir a interface. ",
+			Name = "Interface Escondida",
+			Content = "Aperte left controll pra abrir a interface, ou aperte no icone. ",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
