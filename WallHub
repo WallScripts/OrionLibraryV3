@@ -289,7 +289,7 @@ end)
 CreateElement("RoundFrame", function(Color, Scale, Offset)
 	local Frame = Create("Frame", {
 		BackgroundColor3 = Color or Color3.fromRGB(255, 192, 0),
-		BorderSizePixel = 0.3
+		BorderSizePixel = 0
 	}, {
 		Create("UICorner", {
 			CornerRadius = UDim.new(Scale, Offset)
@@ -302,7 +302,7 @@ CreateElement("Button", function()
 	local Button = Create("TextButton", {
 		Text = "",
 		AutoButtonColor = false,
-		BackgroundTransparency = 1,
+		BackgroundTransparency = 0.2,
 		BorderSizePixel = 0
 	})
 	return Button
