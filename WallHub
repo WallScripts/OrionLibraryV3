@@ -281,7 +281,7 @@ end)
 CreateElement("Frame", function(Color)
 	local Frame = Create("Frame", {
 		BackgroundColor3 = Color or Color3.fromRGB(255, 255, 255),
-		BorderSizePixel = 0
+		BorderSizePixel = 1
 	})
 	return Frame
 end)
@@ -289,7 +289,7 @@ end)
 CreateElement("RoundFrame", function(Color, Scale, Offset)
 	local Frame = Create("Frame", {
 		BackgroundColor3 = Color or Color3.fromRGB(255, 192, 0),
-		BorderSizePixel = 0
+		BorderSizePixel = 1
 	}, {
 		Create("UICorner", {
 			CornerRadius = UDim.new(Scale, Offset)
